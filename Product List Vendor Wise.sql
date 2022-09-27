@@ -22,7 +22,6 @@ select
 
 From
 	ProductVariant
-
 	-- Team A
 	LEFT JOIN (
 		select
@@ -56,8 +55,6 @@ From
 						LastPo.ProductVariantId
 				))
 	) TeamA on ProductVariant.Id = TeamA.ProductVariantId
-
-
 	-- Team B
 	LEFT JOIN (
 		select
@@ -92,8 +89,6 @@ From
 						LastPo.ProductVariantId
 				))
 	) TeamB on ProductVariant.Id = TeamB.ProductVariantId 
-
-
 	-- Team C
 	LEFT JOIN (
 		select
